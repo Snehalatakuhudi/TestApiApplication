@@ -1,0 +1,37 @@
+﻿
+Microsoft Visual Studio Solution File, Format Version 12.00
+# Visual Studio 15
+VisualStudioVersion = 15.0.27703.2035
+MinimumVisualStudioVersion = 10.0.40219.1
+Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "TestApi", "TestApi\TestApi.csproj", "{FF17E8E9-6063-48B0-BDF3-884ACF496531}"
+EndProject
+Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "TestApp.Data", "TestApp.Data\TestApp.Data.csproj", "{A3C7C38F-B079-44D2-94F4-BDCE8B937DD8}"
+EndProject
+Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "TestApp.Business", "TestApp.Business\TestApp.Business.csproj", "{42DF7C16-AC9B-4235-8771-E2386C4AFCB9}"
+EndProject
+Global
+	GlobalSection(SolutionConfigurationPlatforms) = preSolution
+		Debug|Any CPU = Debug|Any CPU
+		Release|Any CPU = Release|Any CPU
+	EndGlobalSection
+	GlobalSection(ProjectConfigurationPlatforms) = postSolution
+		{FF17E8E9-6063-48B0-BDF3-884ACF496531}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
+		{FF17E8E9-6063-48B0-BDF3-884ACF496531}.Debug|Any CPU.Build.0 = Debug|Any CPU
+		{FF17E8E9-6063-48B0-BDF3-884ACF496531}.Release|Any CPU.ActiveCfg = Release|Any CPU
+		{FF17E8E9-6063-48B0-BDF3-884ACF496531}.Release|Any CPU.Build.0 = Release|Any CPU
+		{A3C7C38F-B079-44D2-94F4-BDCE8B937DD8}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
+		{A3C7C38F-B079-44D2-94F4-BDCE8B937DD8}.Debug|Any CPU.Build.0 = Debug|Any CPU
+		{A3C7C38F-B079-44D2-94F4-BDCE8B937DD8}.Release|Any CPU.ActiveCfg = Release|Any CPU
+		{A3C7C38F-B079-44D2-94F4-BDCE8B937DD8}.Release|Any CPU.Build.0 = Release|Any CPU
+		{42DF7C16-AC9B-4235-8771-E2386C4AFCB9}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
+		{42DF7C16-AC9B-4235-8771-E2386C4AFCB9}.Debug|Any CPU.Build.0 = Debug|Any CPU
+		{42DF7C16-AC9B-4235-8771-E2386C4AFCB9}.Release|Any CPU.ActiveCfg = Release|Any CPU
+		{42DF7C16-AC9B-4235-8771-E2386C4AFCB9}.Release|Any CPU.Build.0 = Release|Any CPU
+	EndGlobalSection
+	GlobalSection(SolutionProperties) = preSolution
+		HideSolutionNode = FALSE
+	EndGlobalSection
+	GlobalSection(ExtensibilityGlobals) = postSolution
+		SolutionGuid = {2203B0D8-53D9-4DED-BCB8-9F9B309D1A94}
+	EndGlobalSection
+EndGlobal

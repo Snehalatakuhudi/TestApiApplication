@@ -1,0 +1,21 @@
+<?xml version="1.0" encoding="utf-8"?>
+<edmx:Edmx Version="3.0" xmlns:edmx="http://schemas.microsoft.com/ado/2009/11/edmx">
+ <!-- EF Designer content (DO NOT EDIT MANUALLY BELOW HERE) -->
+  <edmx:Designer xmlns="http://schemas.microsoft.com/ado/2009/11/edmx">
+    <!-- Diagram content (shape and connector positions) -->
+    <edmx:Diagrams>
+      <Diagram DiagramId="930ff459509a4f45a957b393056e4b38" Name="Diagram1">
+        <EntityTypeShape EntityType="TestAppDbModel.UserData" Width="1.5" PointX="3" PointY="1.25" IsExpanded="true" />
+        <EntityTypeShape EntityType="TestAppDbModel.UserInfo" Width="1.5" PointX="0.75" PointY="1" IsExpanded="true" />
+        <AssociationConnector Association="TestAppDbModel.FK__UserData__UserId__182C9B23" ManuallyRouted="false" />
+        <EntityTypeShape EntityType="TestAppDbModel.AspNetRole" Width="1.5" PointX="0.75" PointY="6.5" />
+        <EntityTypeShape EntityType="TestAppDbModel.AspNetUserClaim" Width="1.5" PointX="5.25" PointY="5" />
+        <EntityTypeShape EntityType="TestAppDbModel.AspNetUserLogin" Width="1.5" PointX="5.25" PointY="7.75" />
+        <EntityTypeShape EntityType="TestAppDbModel.AspNetUser" Width="1.5" PointX="3" PointY="6" />
+        <AssociationConnector Association="TestAppDbModel.FK_dbo_AspNetUserClaims_dbo_AspNetUsers_User_Id" />
+        <AssociationConnector Association="TestAppDbModel.FK_dbo_AspNetUserLogins_dbo_AspNetUsers_UserId" />
+        <AssociationConnector Association="TestAppDbModel.AspNetUserRoles" />
+      </Diagram>
+    </edmx:Diagrams>
+  </edmx:Designer>
+</edmx:Edmx>
