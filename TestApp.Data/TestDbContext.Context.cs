@@ -33,38 +33,5 @@ namespace TestApp.Data
         public virtual DbSet<AspNetUserClaim> AspNetUserClaims { get; set; }
         public virtual DbSet<AspNetUserLogin> AspNetUserLogins { get; set; }
         public virtual DbSet<AspNetUser> AspNetUsers { get; set; }
-    
-        public virtual int sp_createuser(string pName, string pEmail, string pPassword, Nullable<int> pAge, Nullable<System.DateTime> pDOB, string pLocation, string pUsrType)
-        {
-            var pNameParameter = pName != null ?
-                new ObjectParameter("pName", pName) :
-                new ObjectParameter("pName", typeof(string));
-    
-            var pEmailParameter = pEmail != null ?
-                new ObjectParameter("pEmail", pEmail) :
-                new ObjectParameter("pEmail", typeof(string));
-    
-            var pPasswordParameter = pPassword != null ?
-                new ObjectParameter("pPassword", pPassword) :
-                new ObjectParameter("pPassword", typeof(string));
-    
-            var pAgeParameter = pAge.HasValue ?
-                new ObjectParameter("pAge", pAge) :
-                new ObjectParameter("pAge", typeof(int));
-    
-            var pDOBParameter = pDOB.HasValue ?
-                new ObjectParameter("pDOB", pDOB) :
-                new ObjectParameter("pDOB", typeof(System.DateTime));
-    
-            var pLocationParameter = pLocation != null ?
-                new ObjectParameter("pLocation", pLocation) :
-                new ObjectParameter("pLocation", typeof(string));
-    
-            var pUsrTypeParameter = pUsrType != null ?
-                new ObjectParameter("pUsrType", pUsrType) :
-                new ObjectParameter("pUsrType", typeof(string));
-    
-            return ((IObjectContextAdapter)this).ObjectContext.ExecuteFunction("sp_createuser", pNameParameter, pEmailParameter, pPasswordParameter, pAgeParameter, pDOBParameter, pLocationParameter, pUsrTypeParameter);
-        }
     }
 }
