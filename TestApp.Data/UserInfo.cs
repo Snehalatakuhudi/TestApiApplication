@@ -24,7 +24,6 @@ namespace TestApp.Data
         public string Name { get; set; }
         public string Email { get; set; }
         public string Password { get; set; }
-        public Nullable<int> Age { get; set; }
         public Nullable<System.DateTime> DOB { get; set; }
         public string Location { get; set; }
         public string UsrType { get; set; }
