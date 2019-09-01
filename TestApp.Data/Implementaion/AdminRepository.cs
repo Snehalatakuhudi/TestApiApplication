@@ -25,7 +25,6 @@ namespace TestApp.Data.Implementaion
                     _list.UserId = x.UserId;
                     _list.Name = x.Name;
                     _list.Email = x.Email;
-                    _list.Age = x.Age;
                     _list.DOB = x.DOB;
                     _list.Location = x.Location;
 
