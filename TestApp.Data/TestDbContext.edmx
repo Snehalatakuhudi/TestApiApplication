@@ -66,8 +66,7 @@
           <Property Name="UserId" Type="int" StoreGeneratedPattern="Identity" Nullable="false" />
           <Property Name="Name" Type="varchar" MaxLength="50" />
           <Property Name="Email" Type="varchar" MaxLength="50" />
-          <Property Name="Password" Type="varchar(max)" />
-          <Property Name="Age" Type="int" />
+          <Property Name="Password" Type="varchar(max)" /> 
           <Property Name="DOB" Type="date" />
           <Property Name="Location" Type="varchar" MaxLength="50" />
           <Property Name="UsrType" Type="varchar" MaxLength="50" />
@@ -139,16 +138,7 @@
               <PropertyRef Name="UserId" />
             </Dependent>
           </ReferentialConstraint>
-        </Association>
-        <Function Name="sp_createuser" Aggregate="false" BuiltIn="false" NiladicFunction="false" IsComposable="false" ParameterTypeSemantics="AllowImplicitConversion" Schema="dbo">
-          <Parameter Name="pName" Type="varchar" Mode="In" />
-          <Parameter Name="pEmail" Type="varchar(max)" Mode="In" />
-          <Parameter Name="pPassword" Type="varchar(max)" Mode="In" />
-          <Parameter Name="pAge" Type="int" Mode="In" />
-          <Parameter Name="pDOB" Type="date" Mode="In" />
-          <Parameter Name="pLocation" Type="varchar" Mode="In" />
-          <Parameter Name="pUsrType" Type="varchar" Mode="In" />
-        </Function>
+        </Association> 
         <EntityContainer Name="TestAppDbModelStoreContainer">
           <EntitySet Name="AspNetRoles" EntityType="Self.AspNetRoles" Schema="dbo" store:Type="Tables" />
           <EntitySet Name="AspNetUserClaims" EntityType="Self.AspNetUserClaims" Schema="dbo" store:Type="Tables" />
@@ -200,8 +190,7 @@
           <Property Name="UserId" Type="Int32" Nullable="false" annotation:StoreGeneratedPattern="Identity" />
           <Property Name="Name" Type="String" MaxLength="50" FixedLength="false" Unicode="false" />
           <Property Name="Email" Type="String" MaxLength="50" FixedLength="false" Unicode="false" />
-          <Property Name="Password" Type="String" MaxLength="Max" FixedLength="false" Unicode="false" />
-          <Property Name="Age" Type="Int32" />
+          <Property Name="Password" Type="String" MaxLength="Max" FixedLength="false" Unicode="false" /> 
           <Property Name="DOB" Type="DateTime" Precision="0" />
           <Property Name="Location" Type="String" MaxLength="50" FixedLength="false" Unicode="false" />
           <Property Name="UsrType" Type="String" MaxLength="50" FixedLength="false" Unicode="false" />
@@ -241,16 +230,7 @@
           <AssociationSet Name="AspNetUserRoles" Association="TestAppDbModel.AspNetUserRoles">
             <End Role="AspNetRole" EntitySet="AspNetRoles" />
             <End Role="AspNetUser" EntitySet="AspNetUsers" />
-          </AssociationSet>
-          <FunctionImport Name="sp_createuser">
-            <Parameter Name="pName" Mode="In" Type="String" />
-            <Parameter Name="pEmail" Mode="In" Type="String" />
-            <Parameter Name="pPassword" Mode="In" Type="String" />
-            <Parameter Name="pAge" Mode="In" Type="Int32" />
-            <Parameter Name="pDOB" Mode="In" Type="DateTime" />
-            <Parameter Name="pLocation" Mode="In" Type="String" />
-            <Parameter Name="pUsrType" Mode="In" Type="String" />
-          </FunctionImport>
+          </AssociationSet> 
         </EntityContainer>
         <EntityType Name="AspNetRole">
           <Key>
@@ -349,8 +329,7 @@
                 <ScalarProperty Name="UserId" ColumnName="UserId" />
                 <ScalarProperty Name="Name" ColumnName="Name" />
                 <ScalarProperty Name="Email" ColumnName="Email" />
-                <ScalarProperty Name="Password" ColumnName="Password" />
-                <ScalarProperty Name="Age" ColumnName="Age" />
+                <ScalarProperty Name="Password" ColumnName="Password" /> 
                 <ScalarProperty Name="DOB" ColumnName="DOB" />
                 <ScalarProperty Name="Location" ColumnName="Location" />
                 <ScalarProperty Name="UsrType" ColumnName="UsrType" />
