@@ -22,8 +22,7 @@ namespace TestApp.Data.Implementaion
                     {
                         Name = userModel.Name,
                         Email = userModel.Email,
-                        Password = userModel.Password,
-                        Age = userModel.Age,
+                        Password = userModel.Password, 
                         DOB = userModel.DOB,
                         Location = userModel.Location,
                         UsrType = userModel.UsrType
@@ -58,8 +57,7 @@ namespace TestApp.Data.Implementaion
                 _result = new UsersList()
                 {
                     Name = data.Name,
-                    Email = data.Email,
-                    Age = data.Age,
+                    Email = data.Email, 
                     DOB = data.DOB,
                     Location = data.Location,
                 };
@@ -98,8 +96,7 @@ namespace TestApp.Data.Implementaion
                         UserInfo _userInfo = new UserInfo();
                         _userInfo = context.UserInfoes.First(a => a.UserId == viewModel.UserId);
                         _userInfo.Email = viewModel.Email;
-                        _userInfo.Name = viewModel.Name;
-                        _userInfo.Age = viewModel.Age;
+                        _userInfo.Name = viewModel.Name; 
                         _userInfo.DOB = viewModel.DOB;
                         _userInfo.Location = viewModel.Location;
 
