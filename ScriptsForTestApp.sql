@@ -11,7 +11,6 @@ Create Table UserInfo(UserId int Primary Key identity(1,1),
   Name varchar(50),
   Email varchar(50),
   Password varchar(Max),
-  Age int,
   DOB Date, 
   Location varchar(50), 
   UsrType varchar(50))
